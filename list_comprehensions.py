@@ -11,6 +11,13 @@ def run():
 
     print(squares)
 
+    print('='*70)
+
+    # List comprehension de un numero que es divisible por 4, 6 y 9
+    multiple = [i for i in range(1,10000) if i % 36 == 0]
+
+    print(multiple)
+
 
 if __name__ == '__main__':
     run()
