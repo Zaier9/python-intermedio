@@ -11,6 +11,10 @@ def run():
 
     print(my_dict)
 
+    raiz_cuadrada = {i: i**0.5 for i in range(1, 1001)}
+
+    print(raiz_cuadrada)
+
 
 if __name__ == '__main__':
     run()
