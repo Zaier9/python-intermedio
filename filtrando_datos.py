@@ -84,6 +84,7 @@ def run():
 
     old_people = list(map(lambda worker: worker | {"old": worker["age"] > 70}, DATA))
 
+    # Unicamente funciona a partir de la version 3.9 de Python
     for worker in all_python_devs:
         print(worker)
 
@@ -97,6 +98,10 @@ def run():
     for worker in adults:
         print(worker)
 
+    print('========================================')
+
+    for worker in old_people:
+        print("worker")
 
 if __name__ == '__main__':
     run()
