@@ -1,5 +1,5 @@
 import random
-#import os
+import os
 
 def read_data():
     with open("./archivos/data.txt", "r", encoding="utf-8") as f:
@@ -34,7 +34,7 @@ def run():
                     if x == word:
                         guessed_word[i] = x
                 guessed_word = "".join(guessed_word)
-            #os.system("cls")
+            os.system("clear")
         print(f"Ganaste! tu plabara era {guessed_word}")
 
         play_again = int(input("Quieres jugar de nuevo?: \n1. Si\n2. No\n"))
