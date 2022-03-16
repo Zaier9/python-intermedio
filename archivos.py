@@ -10,8 +10,8 @@ def read():
 
 
 def write():
-    names = ['Zaier', 'Agustina', 'Pepe', 'Kiara']
-    with open("./archivos/names.txt", "w", encoding="utf-8") as f:
+    names = ['Rosana', 'Zaier', 'Agustina', 'Pepe', 'Kiara', 'Rocío']
+    with open("./archivos/names.txt", "a", encoding="utf-8") as f:
         for name in names:
             f.write(name)
             f.write("\n")
